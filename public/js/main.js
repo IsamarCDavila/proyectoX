@@ -65,7 +65,7 @@ function Whatsapp()
 //creamos las personas que mandaran mensajes
 var wapp = new Whatsapp();
 
-var tati = new Person('Tatiana');
+var isa = new Person('Isamar');
 //var zare = new Person('Zare');
 
 var chat = new Chat();
@@ -76,7 +76,7 @@ wapp.chats.push(chat);
 wapp.selectedChat = chat;
 
 //wapp.sendMessage(new Message('Hola', zare));
-console.log(tati); //la persona que manda el mensaje
+console.log(isa); //la persona que manda el mensaje
 
 //wapp.sendMessage(new Message('Que tal?', tati)); //para establecer ya mensajes
 
@@ -105,7 +105,7 @@ function onInputKeyUp(evt)
 	//console.log(evt.keyCode);
 	if(evt.keyCode == 13)
 	{
-		wapp.sendMessage(new Message(evt.target.value, tati));//manda mensajes con el obj tati d ela clase persona 
+		wapp.sendMessage(new Message(evt.target.value, isa));//manda mensajes con el obj tati d ela clase persona 
 		mensaje.innerHTML=inputMessage.value;
 		hora.innerHTML=horaActual;//id hoa de hora en html
 		evt.target.value = '';
